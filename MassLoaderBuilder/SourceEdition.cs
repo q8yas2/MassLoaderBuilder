@@ -69,7 +69,7 @@
                 #region Проверка на обнаружение иконки
                 if (!string.IsNullOrEmpty(collection.BoxIcon))
                 {
-                    parameters.CompilerOptions += $" /win32icon:{collection.BoxIcon}"; // Добавляем иконку
+                    parameters.CompilerOptions += $" /win32icon:\"{collection.BoxIcon}\""; // Добавляем иконку
                 }
                 #endregion
                 #region Добавление ссылок для компиляции билда
